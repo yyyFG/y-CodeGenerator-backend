@@ -1,6 +1,6 @@
 package cn.y.springbootgenerator.model.dto.generator;
 
-import cn.y.springbootgenerator.meta.Meta;
+import cn.y.meta.Meta;
 import lombok.Data;
 
 import java.io.Serializable;

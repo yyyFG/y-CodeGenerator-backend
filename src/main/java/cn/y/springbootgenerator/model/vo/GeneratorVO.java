@@ -1,7 +1,7 @@
 package cn.y.springbootgenerator.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import cn.y.springbootgenerator.meta.Meta;
+import cn.y.meta.Meta;
 import cn.y.springbootgenerator.model.entity.Generator;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
