@@ -34,10 +34,9 @@ public class CosManager {
     // 复用对象
     private TransferManager transferManager;
 
-
     // bean 加载完成后执行
     @PostConstruct
-    public void init(){
+    public void init() {
         // 执行初始化逻辑
         System.out.println("Bean initialized!");
         // 多线程并发上传下载
@@ -45,9 +44,9 @@ public class CosManager {
         transferManager = new TransferManager(cosClient, threadPool);
     }
 
-
     /**
      * 下载对象到本地文件
+     *
      * @param key
      * @param localFilePath
      * @return
@@ -61,6 +60,7 @@ public class CosManager {
         download.waitForCompletion();
         return download;
     }
+
 
     /**
      * 下载对象
